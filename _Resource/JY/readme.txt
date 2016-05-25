@@ -1,1 +1,1 @@
-Resources for challenge by JY
+Resources by JY

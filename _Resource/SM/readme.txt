@@ -1,1 +1,1 @@
-Resources for challenge by SM
+Resources by SM

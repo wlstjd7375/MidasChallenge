@@ -1,1 +1,1 @@
-Resources for challenge by JS
+Resources by JS

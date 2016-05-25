@@ -1,1 +1,1 @@
-For Midas Challenge on 28th May
+For D-Day
