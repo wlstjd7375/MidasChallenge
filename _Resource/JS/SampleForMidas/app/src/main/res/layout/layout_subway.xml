@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/subway_background">
+
+    <!-- subway -->
+    <LinearLayout
+        android:id="@+id/llSubway"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+
+        <!-- top side -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <!-- left side -->
+            <LinearLayout
+                android:id="@+id/llSubwayImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="3"
+                >
+
+                <ImageView
+                    android:id="@+id/ivSubwayImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    />
+
+            </LinearLayout>
+
+            <!-- Right side -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <!-- full cut side -->
+                <LinearLayout
+                    android:id="@+id/llSubwayFullCut"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <!-- 여기서부터 아래로 3등분 -->
+
+                    <!-- 첫부분 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvSubwayStopName"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:text = "청량리역"
+                            android:textSize="28sp"/>
+
+
+
+                    </LinearLayout>
+
+                    <!-- 중간 부분 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvSubwayLineName"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp"
+                            android:text="1호선 하행"/>
+
+                    </LinearLayout>
+
+
+                    <!-- 마지막 부분 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <!-- 첫번재 차 -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/tvSubwayNextTime"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:textColor="#ffffff"
+                                        android:textSize="50sp"
+                                        android:text="3"/>
+
+                                    <TextView
+                                        android:id="@+id/tvSubwayNextText"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:textColor="#ffffff"
+                                        android:textSize="20sp"
+
+                                        android:text=" 분전"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/tvSubwayDirName"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="#ffffff"
+                                        android:text = "양주행"
+                                        android:textSize="20sp"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!-- 두번째 차 -->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvSubwayNextTime2"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:textColor="#ffffff"
+                                        android:textSize="50sp"
+                                        android:text="8"/>
+
+                                    <TextView
+                                        android:id="@+id/tvSubwayNextText2"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:textColor="#ffffff"
+                                        android:textSize="20sp"
+
+                                        android:text=" 분전"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/tvSubwayDirName2"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="#ffffff"
+                                        android:text = "의정부행"
+                                        android:textSize="20sp"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="5"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:gravity="right"
+                                android:textColor="#ffffff"
+                                android:textSize="9sp"
+                                android:text="철도청 제공"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- full cut end -->
+
+
+
+                <!-- short cut side -->
+                <LinearLayout
+                    android:id="@+id/llSubwayShortCut"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:padding="5dp">
+
+                    <!-- 여기서부터 아래로 2 등분 -->
+
+                    <!-- 첫부분 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvSubwayStopNameSC"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="#ffffff"
+                            android:text = "청량리역"
+                            android:textSize="17sp"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:id="@+id/tvSubwayLineNameSC"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp"
+                            android:text="1호선 하행"/>
+
+                    </LinearLayout>
+
+                    <!-- 두번째 부분 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <!-- 첫번재 차 -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/tvSubwayNextTimeSC"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="20sp"
+                                        android:text="3"/>
+
+                                    <TextView
+                                        android:id="@+id/tvSubwayNextTextSC"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:textColor="#ffffff"
+                                        android:textSize="15sp"
+                                        android:layout_marginRight="5dp"
+                                        android:text="분전"/>
+
+                                    <TextView
+                                        android:id="@+id/tvSubwayDirNameSC"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="#ffffff"
+                                        android:text = "양주행"
+                                        android:textSize="12sp"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!-- 두번째 차 -->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvSubwayNextTime2SC"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="20sp"
+                                        android:text="8"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/tvSubwayNextText2SC"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="15sp"
+                                        android:layout_marginRight="5dp"
+                                        android:text="분전"/>
+
+
+
+                                    <TextView
+                                        android:id="@+id/tvSubwayDirName2SC"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="#ffffff"
+                                        android:text = "의정부행"
+                                        android:textSize="12sp"/>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- short cut end -->
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- bottom side -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="15">
+
+            <TextView
+                android:id="@+id/tvSubwayChange"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:text="지하철을 변경하려면 길게 터치하세요."/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
