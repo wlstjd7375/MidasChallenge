@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/articleCardView"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cultureImageView"
+                android:layout_width="match_parent"
+                android:layout_height="142dp" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/subtitleTextView"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:text="[Today's Cultures]"
+                android:lines="1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/subtitleTextView"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:paddingBottom="10dp"
+                android:text="음식 문화와 식사 예절"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
