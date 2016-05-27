@@ -1,1 +1,1 @@
-Resources by JS
+Resources by JS test
