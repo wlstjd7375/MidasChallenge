@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext, EditMemoActivity.class);
-                intent.putExtra("isNew", true);
+                Intent intent = new Intent(mContext, TestActivity.class);
+                //intent.putExtra("isNew", true);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
             }
