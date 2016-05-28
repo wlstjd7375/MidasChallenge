@@ -13,7 +13,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -102,7 +104,7 @@ public class FirstFragment extends Fragment {
 
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
-
+            final int mPosition = position;
             /*
             *  이걸로 Out Of Memory 해결
             * */
@@ -113,6 +115,13 @@ public class FirstFragment extends Fragment {
 
             StaggeredGridLayoutManager.LayoutParams lp = (StaggeredGridLayoutManager.LayoutParams) holder.itemView.getLayoutParams();
             holder.itemView.setLayoutParams(lp);
+
+            holder.mView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(v.getContext(), "position = " + mPosition, Toast.LENGTH_SHORT).show();
+                }
+            });
 
         }
 
@@ -135,6 +144,7 @@ public class FirstFragment extends Fragment {
                 mImageView = (ImageView) mView.findViewById(R.id.cultureImageView);
                 mTitleTextView.setTypeface(Typeface.MONOSPACE);
                 mSubTitleTextView.setTypeface(Typeface.MONOSPACE);
+
             }
 
         }

@@ -70,8 +70,6 @@ public class MainActivity extends AppCompatActivity
                 builder.setSmallIcon(R.drawable.ic_menu_send).setTicker("HETT").setWhen(System.currentTimeMillis())
                         .setNumber(1).setContentTitle("푸쉬 제목").setContentText("푸쉬내용")
                         .setDefaults(Notification.DEFAULT_SOUND | Notification.DEFAULT_VIBRATE).setContentIntent(pendingNotificationIntent).setAutoCancel(true).setOngoing(true);
-
-
                 //해당 부분은 API 4.1버전부터 작동합니다.
                 //setSmallIcon - > 작은 아이콘 이미지
                 //setTicker - > 알람이 출력될 때 상단에 나오는 문구.

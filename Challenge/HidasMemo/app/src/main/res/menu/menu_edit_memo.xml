@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.midas.hidas.hidasmemo.EditMemoActivity" >
+
+    <item
+        android:id="@+id/deleteMemo"
+        android:icon="@drawable/icon_delete"
+        android:title="delete"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/icon_add_circle"
+        android:title="add"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/gallery"
+                android:title="gallery"
+                android:icon="@drawable/icon_gallery"/>
+            <item
+                android:id="@+id/camera"
+                android:title="camera"/>
+
+            <item
+                android:id="@+id/text"
+                android:title="text"/>
+        </menu>
+    </item>
+
+
+
+</menu>
